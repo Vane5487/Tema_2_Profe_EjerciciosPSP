@@ -1,0 +1,9 @@
+Crea una clase Contador que será el recurso compartido por los hilos (lo que se denomina sección
+crítica). En esta clase:
+▪ define un atributo de tipo entero, inicializado a 0
+▪ un método en el que se devolverá el valor de la variable anterior
+▪ un método que establece (asigna) el valor actual a la variable
+Clase ContadorHilo (el hilo), en donde cada hilo accederá tres veces al recurso compartido Contador y
+lo incrementará en 1, luego dormirá un tiempo aleatorio en cada iteración.
+Clase MainContador (el programa principal, main) que creará 4 hilos (se les pasará el nombre del hilo y
+un objeto de la clase Contador, es decir, el recurso compartido al que accederá) y se lanzan.
